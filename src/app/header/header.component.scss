@@ -27,11 +27,19 @@ body {
 }
 .nav-links a{
   margin-top: 25px;
+  height: 20px;
   display: flex;
   cursor: pointer;
   color: $secondary-color;
   text-decoration: none;
   font-family: 'Roboto',sans-serif;
   font-weight: 500;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
 
+
+}
+.nav-links a:hover {
+ border-color: $secondary-color;
 }
