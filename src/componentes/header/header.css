@@ -1,0 +1,96 @@
+.container-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    color: azure;
+}
+.logo{
+ font-size: 40px;
+font-family: 'Roboto';
+}
+.conjunto{
+ display: flex;
+justify-content:space-between;
+padding-left: 30px;
+padding-right: 40px;
+}
+.nav-header{
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    list-style: none;  
+}
+li{
+    font-size: 15px;
+    font-family: 'Roboto';
+    padding: 10px;
+    border-top: 1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+li:hover{
+    font-family: 'Roboto';
+    cursor: pointer;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom:1px solid white;
+
+}
+.menu-hamburguer{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+}
+
+.burger{
+width: 2rem;
+height: 0.25rem;
+border-radius: 10px;
+background-color: white;
+transform-origin: 1px;
+transition: all 0.3s linear;
+}
+.menu-hamburguer.active .burger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-hamburguer.active .burger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguer.active .burger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+@media (max-width: 767px) {
+    .menu-hamburguer {
+        display: flex; 
+        margin-left: auto;
+        padding-top: 25px;
+        z-index: 10;
+    }
+
+    .nav-header  {
+        display: none; /* Esconde o menu no mobile inicialmente */
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 70px; /* ajusta abaixo do header */
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-header.active {
+        display: flex; /* Mostra quando ativo */
+    }
+    .logo{
+    font-size: 30px;
+    }
+
+}
