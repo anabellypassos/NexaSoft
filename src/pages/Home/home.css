@@ -1,16 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* remove scroll horizontal */
+
 }
 
 
 .quadrante01{
-   background-color: black;
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   padding-left: 30px;
-   flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex; /* lado a lado */
+  justify-content: space-between; /* espaço entre texto e imagem */
+  align-items: center; /* centraliza na vertical */
+  padding: 0 50px;
      
 }
 
@@ -64,7 +67,34 @@ body {
     display: flex;
     gap: 20px;
 }
-.slider img{
-    width: 90px;
-    height: 60px;
+.slider {
+  display: flex;
+  justify-content: flex-end; /* joga a imagem para o fim */
+  flex: 1; /* ocupa o espaço restante */
+}
+
+.slider img {
+ margin-top: 10px;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  display: block;
+
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to top, transparent, black 20%, black 80%, transparent);
+
+  -webkit-mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  mask-image: 
+    linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to top, transparent, black 20%, black 80%, transparent);
+
+  mask-composite: intersect;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
 }
