@@ -1,6 +1,9 @@
 import { Title } from "./styles"
 import Header from "../../componentes/header/header"
 import React, { useState, useEffect } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../Home/home.css'
 import imageslider0 from '../../assets/Midia/imagens/computador-laptop-cinza-ligado.jpg'
 import imageslider01 from '../../assets/Midia/imagens/conceito-de-colagem-de-html-e-css-com-pessoa.jpg'
@@ -23,6 +26,7 @@ import logo11 from '../../assets/Midia/imagens/logosdeempresas/logo11.png';
 import logo12 from '../../assets/Midia/imagens/logosdeempresas/logo12.PNG';
 /* Fim das logos do carrosel*/ 
 
+
 function Home(){
   //useState(0) cria uma váriavel de estado chamada indice atual.
   //Ela começa com 0, que significa que a primeira imagem da lista será mostrada
@@ -41,6 +45,47 @@ function Home(){
       // Limpar o intervalo quando o componente for desmontado
       return () => clearInterval(intervalo);
     }, [listaDeImagens.length]); 
+
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    initialSlide: 0,
+      autoplay: true,
+    autoplaySpeed: 8000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+   
+  
     return(
         <div className="backgroundhome">
   <Header/>
@@ -70,7 +115,7 @@ function Home(){
   </div> 
    <h1 className="Nossos-clientes">Nossos Clientes</h1>
    <div className="carrossel">
-    <div className="container" id="img">
+      <Slider {...settings}>
     <img src={logo1} alt="logo1"></img>
      <img src={logo2} alt="logo2"></img>
       <img src={logo3} alt="logo3"></img>
@@ -83,11 +128,18 @@ function Home(){
              <img src={logo10} alt="logo10"></img>
               <img src={logo11} alt="logo11"></img>
                <img src={logo12} alt="logo12"></img>
+    </Slider>
    </div>
-   </div>
+  
+  <div>
+    <div className="Text02">
+  <h1>Nossos <span>Serviços</span> </h1>
+  <p>Empresas líderes na era digital precisam de um parceiro especializado como a CSP Tech para superar a concorrência. Entendemos seus desafios e mostramos as melhores opções para resolvê-los.</p>
+    </div>
+  </div>
         </div>
        
     )
 }
 
-export default Home
+export default Home;

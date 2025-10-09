@@ -111,28 +111,64 @@ body {
    font-weight: 500;
 
 }
-.carrossel{
- 
-  margin-top: 30px;
-  box-shadow: 2px 2px 4px black;
-  overflow: hidden;
- width: 100px;
- height: 50px;
-
+.carrossel {
+  width: 90%; /* Exemplo: ajuste a largura do carrossel se necessário */
+  margin: 20px auto; /* Centraliza o carrossel na página */
 }
-.container{
- justify-content: center;   
+
+/* Ajusta o tamanho de cada "slide" individual no carrossel */
+.carrossel .slick-slide {
+  /* Use flexbox para centralizar o logo dentro do seu container de slide */
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-
-}
-.carrossel img{
-  object-fit: cover;
-  width: 100px;
-  height: 50px;
-
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Altura fixa para o container do slide, para que todos os logos tenham o mesmo "espaço" vertical */
   
+  /* Adiciona um padding horizontal para criar o "gap" entre os logos.
+     Metade do gap desejado em cada lado. Por exemplo, para um gap de 10px, use 5px aqui. */
+  padding: 0 5px;
+  box-sizing: border-box; /* Importante para que o padding não aumente a largura total do slide */
+}
+
+/* Ajusta o tamanho das imagens dos logos */
+.carrossel .slick-slide img {
+  max-width: 90%;   /* Garante que o logo não seja maior que o slide, considerando o padding */
+  max-height: 80px; /* Define a altura máxima para os logos. A largura se ajusta proporcionalmente. */
+  width: auto;      /* Mantém a proporção da imagem */
+  height: auto;     /* Mantém a proporção da imagem */
+  object-fit: contain; /* Garante que a imagem inteira seja visível dentro de suas dimensões, sem cortar */
+  display: block;   /* Remove qualquer espaço extra que img inline possa ter */
+  margin: 0 auto;   /* Centraliza a imagem horizontalmente dentro do slide */
+}
+
+/* Muito importante: Ajustar a margem do slick-list para compensar o padding do slick-slide */
+/* Se você colocou `padding: 0 5px;` no .slick-slide, aqui será `margin: 0 -5px;` */
+.carrossel .slick-list {
+    margin: 0 -5px; /* Ajuste este valor para ser o negativo do padding horizontal do .slick-slide */
+}
+
+
+.Text02 h1{
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    max-width: 600px;  
+}
+.Text02 h1 span{
+     margin-top: 150px;
+    font-family: 'Roboto';
+    color:#87FD18;
+    font-weight: 700;
+    font-size: 50px;
+}
+.Text02 p{
+   color: rgb(184, 184, 184);
+    margin-top: 20px;
+    font-family: 'Roboto';
+    flex-direction: column;
+    max-width: 500px;  
+    font-size: 20px;
 }
 @media (max-width:768px){
   .quadrante01{
