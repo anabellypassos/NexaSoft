@@ -26,6 +26,13 @@ import logo11 from '../../assets/Midia/imagens/logosdeempresas/logo11.png';
 import logo12 from '../../assets/Midia/imagens/logosdeempresas/logo12.PNG';
 /* Fim das logos do carrosel*/ 
 
+/** Carrosel serviços*/
+import servico1 from "../../assets/Midia/imagens/imagemdeconsultorias/servico1.jpg";
+import servico2 from "../../assets/Midia/imagens/imagemdeconsultorias/servico2.jpg";
+import servico3 from "../../assets/Midia/imagens/imagemdeconsultorias/servico3.jpg";
+import servico4 from "../../assets/Midia/imagens/imagemdeconsultorias/servico4.webp";
+import servico5 from "../../assets/Midia/imagens/imagemdeconsultorias/servico5.jpg";
+/* Fim das imagens de serviços*/
 
 function Home(){
   //useState(0) cria uma váriavel de estado chamada indice atual.
@@ -85,6 +92,47 @@ function Home(){
     ]
   };
    
+
+
+
+  var sliderservicos = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+       sliderservicos: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+       sliderservicos: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+       sliderservicos: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+   
   
     return(
         <div className="backgroundhome">
@@ -132,11 +180,23 @@ function Home(){
    </div>
   
   <div>
+    <div className="quadrante02">
     <div className="Text02">
   <h1>Nossos <span>Serviços</span> </h1>
   <p>Empresas líderes na era digital precisam de um parceiro especializado como a CSP Tech para superar a concorrência. Entendemos seus desafios e mostramos as melhores opções para resolvê-los.</p>
     </div>
+    <div className="carrosselServicos">
+      <Slider{...sliderservicos}>
+        <img src={servico1} alt="servico1" />
+        <img src={servico2} alt="servico2" />
+        <img src={servico3} alt="servico3" />
+        <img src={servico4} alt="servico4" />
+        <img src={servico5} alt="servico5" />
+      </Slider>
+    </div>
+    </div>
   </div>
+
         </div>
        
     )
