@@ -1,22 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* remove scroll horizontal */
+  overflow-x: hidden; 
   height: 100vh;
 
 }
 
 .backgroundhome{
    background-color: black;
-    align-items: center; /* centraliza na vertical */
+    align-items: center; 
   padding: 0 50px;
   flex-direction: column;
 }
 .quadrante01{
   background-color: black;
   width: 100%;
-  display: flex; /* lado a lado */
-  justify-content: space-between; /* espaço entre texto e imagem */
+  display: flex; 
+  justify-content: space-between; 
 
      
 }
@@ -74,8 +74,8 @@ body {
 }
 .slider {
   display: flex;
-  justify-content: flex-end; /* joga a imagem para o fim */
-  flex: 1; /* ocupa o espaço restante */
+  justify-content: flex-end; 
+  flex: 1;
 }
 
 .slider img {
@@ -113,44 +113,36 @@ body {
 
 }
 .carrossel {
-  width: 90%; /* Exemplo: ajuste a largura do carrossel se necessário */
-  margin: 20px auto; /* Centraliza o carrossel na página */
+  width: 90%; 
+  margin: 20px auto; 
 }
 
-/* Ajusta o tamanho de cada "slide" individual no carrossel */
 .carrossel .slick-slide {
-  /* Use flexbox para centralizar o logo dentro do seu container de slide */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Altura fixa para o container do slide, para que todos os logos tenham o mesmo "espaço" vertical */
-  
-  /* Adiciona um padding horizontal para criar o "gap" entre os logos.
-     Metade do gap desejado em cada lado. Por exemplo, para um gap de 10px, use 5px aqui. */
+  height: 100px;
   padding: 0 5px;
-  box-sizing: border-box; /* Importante para que o padding não aumente a largura total do slide */
+  box-sizing: border-box; 
 }
 
-/* Ajusta o tamanho das imagens dos logos */
 .carrossel .slick-slide img {
-  max-width: 90%;   /* Garante que o logo não seja maior que o slide, considerando o padding */
-  max-height: 80px; /* Define a altura máxima para os logos. A largura se ajusta proporcionalmente. */
-  width: auto;      /* Mantém a proporção da imagem */
-  height: auto;     /* Mantém a proporção da imagem */
-  object-fit: contain; /* Garante que a imagem inteira seja visível dentro de suas dimensões, sem cortar */
-  display: block;   /* Remove qualquer espaço extra que img inline possa ter */
-  margin: 0 auto;   /* Centraliza a imagem horizontalmente dentro do slide */
+  max-width: 90%;  
+  max-height: 80px; 
+  width: auto;     
+  height: auto;     
+  object-fit: contain; 
+  display: block;  
+  margin: 0 auto;  
 }
 
-/* Muito importante: Ajustar a margem do slick-list para compensar o padding do slick-slide */
-/* Se você colocou `padding: 0 5px;` no .slick-slide, aqui será `margin: 0 -5px;` */
 .carrossel .slick-list {
-    margin: 0 -5px; /* Ajuste este valor para ser o negativo do padding horizontal do .slick-slide */
+    margin: 0 -5px; 
 }
 
 
 .Text02 h1{
-  margin-top: 90px;
+  margin-top: 150px;
     font-family: 'Roboto';
     color: white;
     font-weight: 400;
@@ -169,7 +161,7 @@ body {
     margin-top: 20px;
     font-family: 'Roboto';
     flex-direction: column;
-    max-width: 500px;  
+    max-width: 300px;  
     font-size: 20px;
 }
 .quadrante02{
@@ -181,65 +173,111 @@ body {
   gap: 0px;
   width: 60%;
   margin: 50px auto;
-   
-}
-.carrosselServicos img{
-  margin-top: 20px;
-  object-fit: cover;
-  height: 500px;
-  border-radius: 20px;
-  border: #87FD18 3px solid;
-}
-.carrosselServicos .slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px; 
-  padding: 0 10px;
-  box-sizing: border-box; /* Importante para que o padding não aumente a largura total do slide */
 }
 
-@media (max-width:768px){
-  .quadrante01{
+/* O container de cada slide no carrossel */
+.carrosselServicos .slick-slide {
+  padding: 0 10px; /* Cria um espaçamento entre os cards */
+  box-sizing: border-box;
+}
+
+
+.servico-card {
+  position: relative; 
+  overflow: hidden;   
+  border-radius: 20px; 
+  height: 500px;      
+  border: #87FD18 3px solid; 
+}
+
+.imagem-servico {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.4s ease; 
+}
+
+.servico-card:hover .imagem-servico {
+  transform: scale(1.05);
+}
+
+
+.servico-overlay {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  padding: 30px 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; 
+  text-align: center;
+}
+
+.servico-titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem; 
+  font-weight: 700;
+  margin: 0 0 15px 0; 
+  line-height: 1.2;
+}
+
+.botao-saiba-mais {
+  background-color: #87FD18; 
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao-saiba-mais:hover {
+  background: linear-gradient(90deg, rgba(170, 255, 0, 1) 0%, rgba(0, 255, 106, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  
+  .quadrante01 {
     flex-direction: column;
     text-align: center;
     padding: 20px;
     height: auto;
-    
-
   }
-  .Titledestac{
+
+  .Titledestac, .Titledestac span {
     font-size: 30px;
-    text-align: center;
-    max-width: 90%;  
-    margin-right: 20px;
-    margin-left: 20px;
-
+    max-width: 100%; 
+    margin: 150px auto 0 auto; 
   }
-  .paragrapy01{
+  
+  .paragrapy01 {
     font-size: 16px;
     text-align: center;
     padding: 10px;
-    max-width: 90%;  
-    margin-right: 20px;
-    margin-left: 20px;
+    max-width: 90%;
+    margin: 20px auto; 
   }
-.Titledestac span{
-    margin-top: 150px;
-    font-weight: 700;
-    font-size: 30px;
-     
-} 
- .button{
+
+  .button {
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap; 
     gap: 15px;
     margin-top: 20px;
-        margin-right: 20px;
-    margin-left: 20px;
   }
- .slider {
+
+  .slider {
     justify-content: center; 
     align-items: center; 
     width: 100%;
@@ -247,12 +285,57 @@ body {
   }
 
   .slider img {
-    width: 80%;
+    width: 90%; 
     margin: 0 auto;
     display: block;
   }
-  .Nossos-clientes{
-   font-size: 30px;
-}
 
+  .Nossos-clientes {
+    font-size: 30px;
+  }
+
+
+  .quadrante02 {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px; 
+    height: auto;
+  }
+
+  .Text02 h1, .Text02 h1 span {
+    font-size: 30px;
+    max-width: 100%;
+    margin: 0 auto; 
+  }
+
+  .Text02 p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;  
+    margin: 20px auto;
+  }
+
+  .carrosselServicos {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .servico-card {
+    height: 420px;
+    margin: 0 auto;
+    position: relative; 
+    overflow: hidden;   
+    border-radius: 20px; 
+    border: #87FD18 3px solid; 
+  }
+
+  .servico-titulo {
+    font-size: 1.5rem; 
+  }
+
+  .botao-saiba-mais {
+    padding: 10px 22px; 
+    font-size: 15px;
+  }
 }
