@@ -246,6 +246,51 @@ body {
   transform: scale(1.05);
 }
 
+.quadrante3 .texts {
+   width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+}
+.texts h1{
+color: white;
+font-family: 'Roboto';
+font-weight: 400;
+}
+.texts h1 span{
+color:#87FD18;
+font-family: 'Roboto';
+font-weight: 700;
+}
+.texts p  {
+color: rgb(184, 184, 184);
+    margin-top: 20px;
+    font-family: 'Roboto';
+    flex-direction: column;
+    font-size: 20px;
+}
+.grupy{
+  color:white;
+   font-family: 'Roboto';
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 700;
+  align-items: flex-end;
+
+}
+
+.blur {
+  width: 200px;
+  height: 200px;
+  background-color: #87FD18;
+  opacity: 0.5;
+  filter: blur(50px); 
+  border-radius: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
 @media (max-width: 768px) {
   
   .quadrante01 {
