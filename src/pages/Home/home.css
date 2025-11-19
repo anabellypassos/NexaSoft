@@ -1,91 +1,97 @@
-body {
+body,html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
   height: 100vh;
+  background-color: black;
 
 }
 
-.backgroundhome{
-   background-color: black;
-    align-items: center; 
+.backgroundhome {
+  background-color: black;
+  align-items: center;
   padding: 0 50px;
   flex-direction: column;
 }
-.quadrante01{
+
+.quadrante01 {
   background-color: black;
   width: 100%;
-  display: flex; 
-  justify-content: space-between; 
-
-     
-}
-
-
-.Titledestac{
-    margin-top: 200px;
-    font-family: 'Roboto';
-    color: white;
-    font-weight: 400;
-    font-size: 50px;
-    max-width: 600px;  
-}
-.Titledestac span{
-    margin-top: 150px;
-    font-family: 'Roboto';
-    color:#87FD18;
-    font-weight: 700;
-    font-size: 50px;
-}
-.paragrapy01{
-    color: rgb(184, 184, 184);
-    margin-top: 20px;
-    font-family: 'Roboto';
-    flex-direction: column;
-    max-width: 500px;  
-    font-size: 20px;
-}
-
-.paragrapy01 span{
-    color:white;
-    font-weight: 600;
- 
-}
-.buttonprimary{
-    background-color: #87FD18;
-    padding: 20px;
-    border-radius: 25px;
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease;
-}
-
-.buttonprimary:hover{
- background: linear-gradient(90deg,rgba(170, 255, 0, 1) 0%, rgba(0, 255, 106, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  display: flex;
+  justify-content: space-between;
 
 
 }
-.button{
-    display: flex;
-    gap: 20px;
+
+
+.Titledestac {
+  margin-top: 200px;
+  font-family: 'Roboto';
+  color: white;
+  font-weight: 400;
+  font-size: 50px;
+  max-width: 600px;
 }
+
+.Titledestac span {
+  margin-top: 150px;
+  font-family: 'Roboto';
+  color: #87FD18;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.paragrapy01 {
+  color: rgb(184, 184, 184);
+  margin-top: 20px;
+  font-family: 'Roboto';
+  flex-direction: column;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.paragrapy01 span {
+  color: white;
+  font-weight: 600;
+
+}
+
+.buttonprimary {
+  background-color: #87FD18;
+  padding: 20px;
+  border-radius: 25px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.buttonprimary:hover {
+  background: linear-gradient(90deg, rgba(170, 255, 0, 1) 0%, rgba(0, 255, 106, 1) 50%, rgba(0, 0, 0, 1) 100%);
+
+
+}
+
+.button {
+  display: flex;
+  gap: 20px;
+}
+
 .slider {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   flex: 1;
 }
 
 .slider img {
- margin-top: 10px;
+  margin-top: 10px;
   width: 90%;
   height: auto;
   margin-left: auto;
   display: block;
 
-  -webkit-mask-image: 
+  -webkit-mask-image:
     linear-gradient(to right, transparent, black 20%, black 80%, transparent),
     linear-gradient(to top, transparent, black 20%, black 80%, transparent);
 
@@ -94,7 +100,7 @@ body {
   -webkit-mask-position: center;
   -webkit-mask-size: cover;
 
-  mask-image: 
+  mask-image:
     linear-gradient(to right, transparent, black 20%, black 80%, transparent),
     linear-gradient(to top, transparent, black 20%, black 80%, transparent);
 
@@ -103,18 +109,20 @@ body {
   mask-position: center;
   mask-size: cover;
 }
-.Nossos-clientes{
+
+.Nossos-clientes {
   margin-top: 150px;
   color: white;
   text-align: center;
   font-family: Roboto;
-   font-size: 40px;
-   font-weight: 500;
+  font-size: 40px;
+  font-weight: 500;
 
 }
+
 .carrossel {
-  width: 90%; 
-  margin: 20px auto; 
+  width: 90%;
+  margin: 20px auto;
 }
 
 .carrossel .slick-slide {
@@ -123,53 +131,57 @@ body {
   align-items: center;
   height: 100px;
   padding: 0 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .carrossel .slick-slide img {
-  max-width: 90%;  
-  max-height: 80px; 
-  width: auto;     
-  height: auto;     
-  object-fit: contain; 
-  display: block;  
-  margin: 0 auto;  
+  max-width: 90%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .carrossel .slick-list {
-    margin: 0 -5px; 
+  margin: 0 -5px;
 }
 
 
-.Text02 h1{
+.Text02 h1 {
   margin-top: 150px;
-    font-family: 'Roboto';
-    color: white;
-    font-weight: 400;
-    font-size: 50px;
-    max-width: 600px;  
+  font-family: 'Roboto';
+  color: white;
+  font-weight: 400;
+  font-size: 50px;
+  max-width: 600px;
 }
-.Text02 h1 span{
-     margin-top: 180px;
-    font-family: 'Roboto';
-    color:#87FD18;
-    font-weight: 700;
-    font-size: 50px;
+
+.Text02 h1 span {
+  margin-top: 180px;
+  font-family: 'Roboto';
+  color: #87FD18;
+  font-weight: 700;
+  font-size: 50px;
 }
-.Text02 p{
-   color: rgb(184, 184, 184);
-    margin-top: 20px;
-    font-family: 'Roboto';
-    flex-direction: column;
-    max-width: 300px;  
-    font-size: 20px;
+
+.Text02 p {
+  color: rgb(184, 184, 184);
+  margin-top: 20px;
+  font-family: 'Roboto';
+  flex-direction: column;
+  max-width: 300px;
+  font-size: 20px;
 }
-.quadrante02{
+
+.quadrante02 {
   display: flex;
   margin-top: 40px;
-  
+
 }
-.carrosselServicos{
+
+.carrosselServicos {
   gap: 0px;
   width: 60%;
   margin: 50px auto;
@@ -177,25 +189,26 @@ body {
 
 /* O container de cada slide no carrossel */
 .carrosselServicos .slick-slide {
-  padding: 0 10px; /* Cria um espaçamento entre os cards */
+  padding: 0 10px;
+  /* Cria um espaçamento entre os cards */
   box-sizing: border-box;
 }
 
 
 .servico-card {
-  position: relative; 
-  overflow: hidden;   
-  border-radius: 20px; 
-  height: 500px;      
-  border: #87FD18 3px solid; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 500px;
+  border: #87FD18 3px solid;
 }
 
 .imagem-servico {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
-  transition: transform 0.4s ease; 
+  transition: transform 0.4s ease;
 }
 
 .servico-card:hover .imagem-servico {
@@ -204,31 +217,31 @@ body {
 
 
 .servico-overlay {
-  position: absolute; 
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0) 100%);
   color: white;
   padding: 30px 20px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   text-align: center;
 }
 
 .servico-titulo {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
   font-weight: 700;
-  margin: 0 0 15px 0; 
+  margin: 0 0 15px 0;
   line-height: 1.2;
 }
 
 .botao-saiba-mais {
-  background-color: #87FD18; 
+  background-color: #87FD18;
   color: black;
   font-weight: 600;
   border: none;
@@ -245,54 +258,80 @@ body {
   color: white;
   transform: scale(1.05);
 }
-
-.quadrante3 .texts {
-   width: 100%;
-  display: flex; 
-  justify-content: space-between; 
-}
-.texts h1{
-color: white;
-font-family: 'Roboto';
-font-weight: 400;
-}
-.texts h1 span{
-color:#87FD18;
-font-family: 'Roboto';
-font-weight: 700;
-}
-.texts p  {
-color: rgb(184, 184, 184);
-    margin-top: 20px;
-    font-family: 'Roboto';
-    flex-direction: column;
-    font-size: 20px;
-}
-.grupy{
-  color:white;
-   font-family: 'Roboto';
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: 700;
-  align-items: flex-end;
-
-}
-
-.blur {
-  width: 200px;
+.quadrante3 .blur{
+ width: 200px;
   height: 200px;
   background-color: #87FD18;
   opacity: 0.5;
-  filter: blur(50px); 
-  border-radius: 50%; 
+  filter: blur(50px);
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
+.quadrante3 .texts {
+  display: flex;
+  justify-content: flex-start; /* ou space-between se quiser extremidades separadas */
+  gap: 20px; /* define o espaço horizontal entre h1 e p */
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.texts h1 {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 400;
+  max-width: 400px;
+
+}
+
+.texts h1 span {
+  color: #87FD18;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.texts p {
+  color: rgb(184, 184, 184);
+  margin-top: 20px;
+  font-family: 'Roboto';
+  flex-direction: column;
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 30px;
+}
+
+.grupy {
+  color: white;
+  font-family: 'Roboto';
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -10px;
+   margin-left: 470px;
+}
+
+.container-secton3 {
+  border: solid 2px white;
+  border-radius: 15px;
+  position: absolute;       
+  left: 50%; 
+  transform: translate(-50%, -50%); /* centraliza exatamente pelo centro */
+  padding: 30px;
+  margin-top: 300px;
+  background: #090f08;
+  background: radial-gradient(circle, rgb(6, 139, 1) 0%, rgba(1, 3, 0, 1) 100%);
+  width: 80%;
+}
+
+
+
 @media (max-width: 768px) {
-  
+
   .quadrante01 {
     flex-direction: column;
     text-align: center;
@@ -300,37 +339,38 @@ color: rgb(184, 184, 184);
     height: auto;
   }
 
-  .Titledestac, .Titledestac span {
+  .Titledestac,
+  .Titledestac span {
     font-size: 30px;
-    max-width: 100%; 
-    margin: 150px auto 0 auto; 
+    max-width: 100%;
+    margin: 150px auto 0 auto;
   }
-  
+
   .paragrapy01 {
     font-size: 16px;
     text-align: center;
     padding: 10px;
     max-width: 90%;
-    margin: 20px auto; 
+    margin: 20px auto;
   }
 
   .button {
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
   }
 
   .slider {
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 30px auto 0; 
+    margin: 30px auto 0;
   }
 
   .slider img {
-    width: 90%; 
+    width: 90%;
     margin: 0 auto;
     display: block;
   }
@@ -343,21 +383,22 @@ color: rgb(184, 184, 184);
   .quadrante02 {
     flex-direction: column;
     text-align: center;
-    padding: 0 15px; 
+    padding: 0 15px;
     height: auto;
   }
 
-  .Text02 h1, .Text02 h1 span {
+  .Text02 h1,
+  .Text02 h1 span {
     font-size: 30px;
     max-width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .Text02 p {
     font-size: 16px;
     text-align: center;
     padding: 10px;
-    max-width: 90%;  
+    max-width: 90%;
     margin: 20px auto;
   }
 
@@ -365,22 +406,22 @@ color: rgb(184, 184, 184);
     width: 100%;
     margin-top: 40px;
   }
-  
+
   .servico-card {
     height: 420px;
     margin: 0 auto;
-    position: relative; 
-    overflow: hidden;   
-    border-radius: 20px; 
-    border: #87FD18 3px solid; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: #87FD18 3px solid;
   }
 
   .servico-titulo {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .botao-saiba-mais {
-    padding: 10px 22px; 
+    padding: 10px 22px;
     font-size: 15px;
   }
 }

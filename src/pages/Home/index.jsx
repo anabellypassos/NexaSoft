@@ -232,6 +232,7 @@ function Home() {
         </div>
       </div>
       <div className="quadrante3">
+        <div className="container-secton3">
             <div className="bluor"></div>
             <div className="texts">
               <h1> Décadas de história ajudando a<span> transformar negócios e cocriar experiências digitais</span></h1>
@@ -244,6 +245,7 @@ function Home() {
               
             </div>
             <p className="grupy">Betsy Rabello, Ex-CIO do Grupo Ipiranga</p>
+          </div>
           </div>
     </div>
 
