@@ -235,7 +235,7 @@ function Home() {
         <div className="container-secton3">
             <div className="bluor"></div>
             <div className="texts">
-              <h1> Décadas de história ajudando a<span> transformar negócios e cocriar experiências digitais</span></h1>
+              <h1> Décadas de história ajudando a<span> transformar negócios e criar experiências digitais</span></h1>
               <p>"Com o modelo implantado pela CSP, conseguimos maior volume de entregas, ganhamos produtividade,
                 rapidez no tempo de resposta e redução de custos.
                 Na parte de Business Intelligence, os painéis

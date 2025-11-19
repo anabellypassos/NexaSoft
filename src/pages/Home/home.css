@@ -424,4 +424,57 @@ body,html {
     padding: 10px 22px;
     font-size: 15px;
   }
+
+
+  .container-secton3 {
+    display: flex;          
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center;
+    text-align: center;      
+    border: solid 2px white;
+    border-radius: 15px;
+    position: absolute;       
+    padding: 30px;
+    margin-top: 600px;
+    background: radial-gradient(circle, rgb(6, 139, 1) 0%, rgba(1, 3, 0, 1) 100%);
+    width: 50%;
+  }
+
+  .quadrante3 .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0; 
+    gap: 15px;
+  }
+
+  .texts h1 span {
+    font-size: 20px;
+    max-width: 50%;
+    max-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .texts p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grupy {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px; 
+    margin-left: 0;
+    text-align: center;
+  }
+
 }
