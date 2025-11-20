@@ -126,6 +126,17 @@ function Home() {
       }
     ]
   };
+  const [bolas, setbolas]= useState([]);
+  useEffect(() =>{
+    const quantidadedeBolas = 100;
+    const bolasnovas = Array.from({length:quantidadedeBolas}).map((_,index)=>({
+      id:index,
+      left : Math.random()*100,
+      top : Math.random()*100,
+      size : Math.random()*15 + 5,
+      delay : Math.random()*5
+    }));setbolas(bolasnovas);
+  },[]);
   return (
     <div className="backgroundhome">
       <Header />
@@ -232,8 +243,20 @@ function Home() {
         </div>
       </div>
       <div className="quadrante3">
+         {bolas.map((bola) => (
+          <div
+            key={bola.id}
+            className="boll"
+            style={{
+              left: `${bola.left}%`,
+              top: `${bola.top}%`,
+              width: `${bola.size}px`,
+              height: `${bola.size}px`,
+              animationDelay: `${bola.delay}s` // Se usar a animação CSS
+            }}
+          ></div>
+        ))}
         <div className="container-secton3">
-            <div className="bluor"></div>
             <div className="texts">
               <h1> Décadas de história ajudando a<span> transformar negócios e criar experiências digitais</span></h1>
               <p>"Com o modelo implantado pela CSP, conseguimos maior volume de entregas, ganhamos produtividade,
