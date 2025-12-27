@@ -1,0 +1,286 @@
+.Nossos-clientes {
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.carrossel {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.carrossel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.carrossel .slick-slide img {
+    max-width: 90%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.carrossel .slick-list {
+    margin: 0 -5px;
+}
+
+.Text02 h1 {
+    margin-top: 150px;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+.Text02 h1 span {
+    margin-top: 180px;
+    font-family: 'Roboto';
+    color: #87FD18;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.Text02 p {
+    margin-left: 40px;
+
+    color: rgb(184, 184, 184);
+    margin-top: 20px;
+    font-family: 'Roboto';
+    flex-direction: column;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+.quadrante02 {
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.carrosselServicos {
+    gap: 0px;
+    width: 60%;
+    margin: 50px auto;
+}
+
+.carrosselServicos .slick-slide {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.servico-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 500px;
+    border: #87FD18 3px solid;
+}
+
+.imagem-servico {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.servico-card:hover .imagem-servico {
+    transform: scale(1.05);
+}
+
+
+.servico-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.servico-titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+
+.botao-saiba-mais {
+    background-color: #87FD18;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.botao-saiba-mais:hover {
+    background: linear-gradient(90deg, rgba(170, 255, 0, 1) 0%, rgba(0, 255, 106, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+.quadrante3 {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .quadrante01 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .Titledestac,
+    .Titledestac span {
+        font-size: 30px;
+        max-width: 100%;
+        margin: 150px auto 0 auto;
+    }
+
+    .paragrapy01 {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .button {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .slider {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+
+    .slider img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .Nossos-clientes {
+        font-size: 30px;
+    }
+
+
+    .quadrante02 {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    .Text02 h1,
+    .Text02 h1 span {
+        font-size: 30px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .Text02 p {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .carrosselServicos {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .servico-card {
+        height: 420px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        border: #87FD18 3px solid;
+    }
+
+    .servico-titulo {
+        font-size: 1.5rem;
+    }
+
+    .botao-saiba-mais {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+    .texts h1 {
+        font-size: 20px;
+        max-height: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .texts p {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        max-width: 50%;
+
+    }
+
+
+
+}
+
+@media (max-width:1291px) {
+    .texts p {
+        margin-top: 50px;
+        max-width: 500%;
+        padding-right: 30px;
+
+    }
+}
