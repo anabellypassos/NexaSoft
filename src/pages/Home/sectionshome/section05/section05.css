@@ -1,0 +1,48 @@
+.section05 {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.section05 h1 { position: relative; z-index: 2; color: #A1FE1E; font-size: 48px; font-family: 'Roboto'; font-weight: bold; }
+.section05::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.692);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.section05 h1,
+.buttoncall {
+    position: relative;
+    z-index: 2;
+}
+
+.buttoncall {
+    background-color: #87FD18;
+    padding: 20px;
+    border-radius: 25px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.buttoncall:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(170, 255, 0, 1) 0%,
+        rgba(0, 255, 106, 1) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}

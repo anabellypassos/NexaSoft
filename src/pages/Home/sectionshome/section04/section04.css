@@ -1,0 +1,36 @@
+
+
+.section04-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+     padding-right:150px;
+        padding-left:150px;
+            font-family: 'Roboto';
+            gap: 20px;
+
+}
+.section04-container h2{
+font-size: 32px;
+font-weight: bold;
+}
+.section04-container p{
+    max-width: 400px;
+}
+hr{
+  border-color:#ffffff;
+  box-sizing:border-box;
+  width:80%;  
+}
+@media(max-width:750px){
+    .section04-container{
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+       .section04-container h2{
+      font-size: 30px;
+    }
+}

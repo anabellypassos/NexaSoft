@@ -1,11 +1,16 @@
+
+
 .quadrante3 .texts {
   display: flex;
   justify-content: flex-start; 
   width: 100%;
   margin-left: 50px;
   margin-right: 50px;
+      overflow-x:hidden;
+
 
 }
+    
 
 .texts h1 {
   color: white;
@@ -49,7 +54,7 @@
   margin-top: 200px;
   background: #090f08;
   background: radial-gradient(circle, rgb(6, 139, 1) 0%, rgba(1, 3, 0, 1) 100%);
-  width: 100%;
+  width: 70%;
   height: auto;
   margin-bottom: 200px;
   margin-left: 40px;
