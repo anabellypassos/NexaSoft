@@ -10,7 +10,6 @@ const Section04 = () => {
                 </p>
                 
             </div>
-            <hr />
         </div>
     )
 }

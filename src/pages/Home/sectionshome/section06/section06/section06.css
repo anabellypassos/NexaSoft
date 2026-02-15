@@ -1,0 +1,75 @@
+.footer {
+    padding: 40px
+}
+
+.logo {
+    color: white;
+}
+
+.section01 h3 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto';
+
+}
+ .sectonitens{
+    display: flex;
+    justify-content: space-around;
+}
+.sectonitens p{
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
+    position: relative;
+}
+
+.sectonitens p::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.sectonitens p:hover::after{
+    width: 100%;
+}
+.ours p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto';
+    justify-content: center;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.divider{
+    color: white;
+    padding: 0 10px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+hr {
+ border: none;
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+}
+
+@media(max-width:700px){
+    .sectonitens{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

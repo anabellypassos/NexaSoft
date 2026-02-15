@@ -10,6 +10,7 @@ import Section03 from "./sectionshome/section03/section03";
 import Section01 from "./sectionshome/section01/section01";
 import Section04 from "./sectionshome/section04/section04";
 import Section05 from "./sectionshome/section05/section05";
+import Section06 from "./sectionshome/section06/section06";
 function Home() {
   return (
     <div >
@@ -18,6 +19,7 @@ function Home() {
 <Section03/>
 <Section04/>
 <Section05/>
+<Section06/>
 </div>
 
    
