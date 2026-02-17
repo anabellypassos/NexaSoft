@@ -14,16 +14,20 @@ import Section06 from "./sectionshome/section06/section06";
 function Home() {
   return (
     <div >
-<Section01 /> 
-<Section02/>
-<Section03/>
-<Section04/>
-<Section05/>
-<Section06/>
-</div>
+      <Section01 />
+      <div id="servicos">
+        <Section02 />
+      </div>
+      <Section03 />
+      <Section04 />
+      <div id="contato">
+        <Section05 />
+      </div>
+      <Section06 />
+    </div>
 
-   
-    
+
+
 
   )
 }
