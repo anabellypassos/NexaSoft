@@ -8,9 +8,11 @@ import imageslider02 from '../../../../assets/Midia/imagens/conceito-de-fundo-de
 import imageslider03 from '../../../../assets/Midia/imagens/engenheiro-de-computadores-digitar-no-teclado-escrever-codigo-para-construir-firewalls.jpg';
 import imageslider04 from '../../../../assets/Midia/imagens/tela-de-digitalizacao-de-programador-em-seu-smartwatch-com-camera-smartphone.jpg';
 import imageslider05 from '../../../../assets/Midia/imagens/trabalhando-no-codigo.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Section01 = () => {
   const [indiceAtual, setIndiceAtual] = useState(0);
+  const {t}= useTranslation();
 
   const listaDeImagens = [
     imageslider0,
@@ -36,17 +38,17 @@ const Section01 = () => {
       <div className="quadrante01">
         <div className="conteudo-texto">
           <h1 className="Titledestac">
-            Consultoria especializada em <span>desenvolvimento de software customizados</span>
+            {t('HERO_TITLE')}<span>{t('HERO_TITLE-SPAN')}</span>
           </h1>
 
           <p className="paragrapy01">
-            Apoiamos empresas não nativas digitais a <span>digitalizar processos críticos</span>
-            e criar novas linhas de receita com produtos ou sistemas criados <span>sob medida</span>
+           {t('HERO_DESCRIPTION')}<span>{t('HERO_DESCRIPTION-SPAN')}</span>
+            {t('HERO_DESCRIPTION-SPAN2')} <span>{t('HERO_DESCRIPTION-SPAN3')}</span>
           </p>
 
           <div className="button">
-            <button className="buttonprimary">Fale com especialista</button>
-            <button className="buttonprimary">Agende uma reunião</button>
+            <button className="buttonprimary">{t('CTA_TALK_SPECIALIST')}</button>
+            <button className="buttonprimary">{t('CTA_SCHEDULE_MEETING')}</button>
           </div>
         </div>
 

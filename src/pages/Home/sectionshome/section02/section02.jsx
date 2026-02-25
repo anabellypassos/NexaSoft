@@ -3,6 +3,7 @@ import "../section02/section02.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from 'react-i18next';
 /*Logos do carrossel*/
 import logo1 from '../../../../assets/Midia/imagens/logosdeempresas/logo1.png';
 import logo2 from '../../../../assets/Midia/imagens/logosdeempresas/logo2.jpg';
@@ -24,6 +25,8 @@ import servico3 from "../../../../assets/Midia/imagens/imagemdeconsultorias/serv
 import servico4 from "../../../../assets/Midia/imagens/imagemdeconsultorias/servico4.webp";
 import servico5 from "../../../../assets/Midia/imagens/imagemdeconsultorias/servico5.jpg";
 const Section02 = () => {
+
+  const {t}= useTranslation();
     
   var settings = {
     dots: true,
@@ -101,7 +104,7 @@ const Section02 = () => {
   };
   return (
     <div>
-       <h1 className="Nossos-clientes">Nossos Clientes</h1>
+       <h1 className="Nossos-clientes">{t('OUR_CLIENTS')}</h1>
       <div className="carrossel">
         <Slider {...settings}>
           <img src={logo1} alt="logo1"></img>
@@ -121,8 +124,8 @@ const Section02 = () => {
          <div>
               <div className="quadrante02">
                 <div className="Text02">
-                  <h1>Nossos <span>Serviços</span> </h1>
-                  <p>Empresas líderes na era digital precisam de um parceiro especializado como a CSP Tech para superar a concorrência. Entendemos seus desafios e mostramos as melhores opções para resolvê-los.</p>
+                  <h1>{t('OUR_SERVICES')} <span>{t('OUR_SERVICES-SPAN')}</span> </h1>
+                  <p>{t('PARTNER_TEXT')}</p>
                 </div>
                 <div className="carrosselServicos">
                   <Slider{...sliderservicos}>
