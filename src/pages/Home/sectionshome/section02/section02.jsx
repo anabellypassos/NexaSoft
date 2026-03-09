@@ -132,17 +132,17 @@ const Section02 = () => {
                     <div className="servico-card">
                       <img src={servico1} alt="servico1" className="imagem-servico" />
                       <div className="servico-overlay">
-                        <h3 className="servico-titulo">Design UI UX</h3>
-                        <a href="/servico1" className="botao-saiba-mais">Saiba Mais</a>
+                        <h3 className="servico-titulo">{t('SERVICES.UI_UX_DESIGN')}</h3>
+                        <a href="/servico1" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                       </div>
                     </div>
       
                     <div className="servico-card">
                       <img src={servico2} alt="servico2" className="imagem-servico" />
                       <div className="servico-overlay">
-                        <h3 className="servico-titulo">Solution Development</h3>
+                        <h3 className="servico-titulo">{t('SERVICES.SOLUTION_DEVELOPMENT')}</h3>
       
-                        <a href="/servico2" className="botao-saiba-mais">Saiba Mais</a>
+                        <a href="/servico2" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                       </div>
                     </div>
       
@@ -151,17 +151,17 @@ const Section02 = () => {
       
                       <img src={servico3} alt="servico3" className="imagem-servico" />
                       <div className="servico-overlay">
-                        <h3 className="servico-titulo">Smart Process</h3>
-                        <a href="/servico3" className="botao-saiba-mais">Saiba Mais</a>
+                        <h3 className="servico-titulo">{t('SERVICES.SMART_PROCESS')}</h3>
+                        <a href="/servico3" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                       </div>
                     </div>
       
                     <div className="servico-card">
                       <img src={servico4} alt="servico4" className="imagem-servico" />
                       <div className="servico-overlay">
-                        <h3 className="servico-titulo">Consultoria em Jira</h3>
+                        <h3 className="servico-titulo">{t('SERVICES.JIRA_CONSULTING')}</h3>
       
-                        <a href="/servico4" className="botao-saiba-mais">Saiba Mais</a>
+                        <a href="/servico4" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                       </div>
       
                     </div>
@@ -169,10 +169,10 @@ const Section02 = () => {
                     <div className="servico-card">
                       <img src={servico5} alt="servico5" className="imagem-servico" />
                       <div className="servico-overlay">
-                        <h3 className="servico-titulo">Data & AI
+                        <h3 className="servico-titulo">{t('SERVICES.DATA_AI')}
                         </h3>
       
-                        <a href="/servico5" className="botao-saiba-mais">Saiba Mais</a>
+                        <a href="/servico5" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                       </div>
       
                     </div>

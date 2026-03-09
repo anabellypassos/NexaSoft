@@ -36,6 +36,9 @@
   "SERVICES": {
     "UI_UX_DESIGN": "Design UI/UX",
     "SOLUTION_DEVELOPMENT": "Desenvolvimento de Soluções",
-    "SMART_PROCESS": "Processos Inteligentes"
+    "SMART_PROCESS": "Processos Inteligentes",
+    "JIRA_CONSULTING": "Consultoria em Jira",
+    "DATA_AI": "Dados e IA",
+    "LEARN_MORE": "Saiba Mais"
   }
 }

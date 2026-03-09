@@ -36,6 +36,9 @@
   "SERVICES": {
     "UI_UX_DESIGN": "UI/UX Design",
     "SOLUTION_DEVELOPMENT": "Solution Development",
-    "SMART_PROCESS": "Smart Process"
+    "SMART_PROCESS": "Smart Process",
+    "JIRA_CONSULTING": "Jira Consulting",
+    "DATA_AI": "Data & AI",
+    "LEARN_MORE": "Learn More"
   }
 }
