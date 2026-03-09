@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import "../section03/section03.css"
 const Section03 = () => {
+  const {t}= useTranslation();
      const [bolas, setbolas]= useState([]);
       useEffect(() =>{
         const quantidadedeBolas = 100;
@@ -29,16 +31,12 @@ const Section03 = () => {
         ))}
         <div className="container-secton3">
             <div className="texts">
-              <h1> Décadas de história ajudando a<span> transformar negócios e criar experiências digitais</span></h1>
-              <p>"Com o modelo implantado pela CSP, conseguimos maior volume de entregas, ganhamos produtividade,
-                rapidez no tempo de resposta e redução de custos.
-                Na parte de Business Intelligence, os painéis
-                desenvolvidos pela CSP chegam até o nível executivo,
-                com resultados e dados que apoiam nossa melhor tomada de decisão."
+              <h1> {t('DECADES.DECADES_TRANSFORMING_BUSINESSES')}<span> {t('DECADES.DECADES_TRANSFORMING_BUSINESSES2')}</span></h1>
+              <p>"{t('DECADES.CSP_TESTIMONIAL')}"
               </p>
               
             </div>
-            <p className="grupy">Betsy Rabello, Ex-CIO do Grupo Ipiranga</p>
+            <p className="grupy"> {t('DECADES.BETSY_RABELLO_TITLE')}</p>
           </div>
           </div>
   )

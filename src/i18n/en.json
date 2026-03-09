@@ -40,5 +40,11 @@
     "JIRA_CONSULTING": "Jira Consulting",
     "DATA_AI": "Data & AI",
     "LEARN_MORE": "Learn More"
+  },
+  "DECADES": {
+    "DECADES_TRANSFORMING_BUSINESSES": "Decades of history helping to ",
+    "DECADES_TRANSFORMING_BUSINESSES2": "transform businesses and create digital experiences",
+    "CSP_TESTIMONIAL": "With the model implemented by CSP, we achieved a higher delivery volume, improved productivity, faster response times, and cost reduction. In Business Intelligence, the dashboards developed by CSP reach the executive level, providing results and data that support better decision-making.",
+    "BETSY_RABELLO_TITLE": "Betsy Rabello, Former CIO of Grupo Ipiranga"
   }
 }

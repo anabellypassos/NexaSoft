@@ -40,7 +40,11 @@
     "JIRA_CONSULTING": "Consultoría en Jira",
     "DATA_AI": "Datos e IA",
     "LEARN_MORE": "Saber Más"
-
+  },
+  "DECADES": {
+    "DECADES_TRANSFORMING_BUSINESSES": "Décadas de historia ayudando a ",
+    "DECADES_TRANSFORMING_BUSINESSES2": "transformar negocios y crear experiencias digitales",
+    "CSP_TESTIMONIAL": "Con el modelo implantado por CSP, conseguimos un mayor volumen de entregas, aumentamos la productividad, la rapidez en el tiempo de respuesta y la reducción de costes. En la parte de Business Intelligence, los paneles desarrollados por CSP llegan hasta el nivel ejecutivo, con resultados y datos que apoyan una mejor toma de decisiones.",
+    "BETSY_RABELLO_TITLE": "Betsy Rabello, Ex-CIO del Grupo Ipiranga"
   }
-  
 }
