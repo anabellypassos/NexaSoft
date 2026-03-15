@@ -46,5 +46,24 @@
     "DECADES_TRANSFORMING_BUSINESSES2": "transformar negocios y crear experiencias digitales",
     "CSP_TESTIMONIAL": "Con el modelo implantado por CSP, conseguimos un mayor volumen de entregas, aumentamos la productividad, la rapidez en el tiempo de respuesta y la reducción de costes. En la parte de Business Intelligence, los paneles desarrollados por CSP llegan hasta el nivel ejecutivo, con resultados y datos que apoyan una mejor toma de decisiones.",
     "BETSY_RABELLO_TITLE": "Betsy Rabello, Ex-CIO del Grupo Ipiranga"
-  }
+  },
+  "ABOUT_TITLE_SMALL": "Quiénes somos",
+  "ABOUT_TITLE": "Soluciones digitales para desafíos reales.",
+  "ABOUT_TEXT": "Somos especialistas en el desarrollo de soluciones personalizadas, con inteligencia de procesos, agilidad, eficiencia y enfoque en la evolución continua. A través de la tecnología, apoyamos a empresas de diversos sectores del mercado hacia la excelencia digital.",
+  "CONTACT_TITLE": "¿Hablamos?",
+  "CONTACT_BUTTON": "Habla con uno de nuestros consultores",
+  "FOOTER_TITLE": "Apoyando tu camino continuo hacia la excelencia digital",
+  "FOOTER_ATLASSIAN": "Atlassian",
+  "FOOTER_JIRA_LICENSE": "Licenciamiento de Jira",
+  "FOOTER_JIRA_CONSULTING": "Consultoría en Jira",
+  "FOOTER_MICROSOFT": "Microsoft",
+  "FOOTER_DATA_AI": "Data & AI",
+  "FOOTER_DIGITAL_WORKPLACE": "Digital Workplace",
+  "FOOTER_SALESFORCE": "Salesforce",
+  "FOOTER_BLOG": "Blog",
+  "FOOTER_CONTACT": "Contacto",
+  "FOOTER_OMBUDSMAN": "Defensoría",
+  "FOOTER_COPYRIGHT": "@2026 NexaSoft",
+  "FOOTER_SECURITY_POLICY": "Política de Seguridad de la Información",
+  "FOOTER_CODE_ETHICS": "Código de Conducta y Ética"
 }
