@@ -10,11 +10,8 @@ import logo2 from '../../../../assets/Midia/imagens/logosdeempresas/logo2.jpg';
 import logo3 from '../../../../assets/Midia/imagens/logosdeempresas/logo3.png';
 import logo4 from '../../../../assets/Midia/imagens/logosdeempresas/logo4.png';
 import logo5 from '../../../../assets/Midia/imagens//logosdeempresas/logo5.png';
-import logo6 from '../../../../assets/Midia/imagens/logosdeempresas/logo6.webp';
-import logo7 from '../../../../assets/Midia/imagens/logosdeempresas/logo7.png';
 import logo8 from '../../../../assets/Midia/imagens/logosdeempresas/logo8.png';
 import logo9 from '../../../../assets/Midia/imagens/logosdeempresas/logo9.png';
-import logo10 from '../../../../assets/Midia/imagens/logosdeempresas/logo10.png';
 import logo11 from '../../../../assets/Midia/imagens/logosdeempresas/logo11.png';
 import logo12 from '../../../../assets/Midia/imagens/logosdeempresas/logo12.PNG';
 
@@ -112,10 +109,8 @@ const Section02 = () => {
           <div className="logo-container"><img src={logo3} alt="logo3" /></div>
           <div className="logo-container"><img src={logo4} alt="logo4" /></div>
           <div className="logo-container"><img src={logo5} alt="logo5" /></div>
-          <div className="logo-container"><img src={logo6} alt="logo6" /></div>
           <div className="logo-container"><img src={logo8} alt="logo8" /></div>
           <div className="logo-container"><img src={logo9} alt="logo9" /></div>
-          <div className="logo-container"><img src={logo10} alt="logo10" /></div>
           <div className="logo-container"><img src={logo11} alt="logo11" /></div>
           <div className="logo-container"><img src={logo12} alt="logo12" /></div>
         </Slider>

@@ -18,6 +18,8 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
+    padding-right:10px;
 }
 
 .carrossel .slick-slide img {
@@ -69,7 +71,7 @@
 }
 
 .carrosselServicos {
-    gap: 0px;
+    gap: 15px;
     width: 60%;
     margin: 50px auto;
 }
@@ -129,7 +131,7 @@
     font-family: 'roboto';
     background-color: #87FD18;
     color: black;
-    font-weight: 700;
+    font-weight: 70;
     border: none;
     border-radius: 20px;
     padding: 12px 25px;
@@ -284,4 +286,10 @@
         padding-right: 30px;
 
     }
+    .carrosselServicos {
+    gap: 25px;
+    width: 60%;
+    margin: 50px auto;
+}
+
 }
