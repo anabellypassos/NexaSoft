@@ -4,7 +4,7 @@
     text-align: center;
     font-family: Roboto;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 300;
 
 }
 
@@ -13,27 +13,25 @@
     margin: 20px auto;
 }
 
-.carrossel .slick-slide {
-    display: flex;
-    justify-content: center;
+.carrossel .slick-slide > div {
+    height: 120px; /* Altura fixa para todos os espaços de logos */
+    display: flex !important;
     align-items: center;
-    height: 100px;
-    padding: 0 5px;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 .carrossel .slick-slide img {
-    max-width: 90%;
-    max-height: 80px;
+    max-width: 140px;  /* Largura máxima permitida */
+    max-height: 80px;  /* Altura máxima permitida */
     width: auto;
     height: auto;
-    object-fit: contain;
-    display: block;
+    object-fit: contain; /* Garante que a logo não distorça */
     margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
-.carrossel .slick-list {
-    margin: 0 -5px;
+.carrossel .slick-slide img:hover {
+    transform: scale(1.1);
 }
 
 .Text02 h1 {
@@ -43,7 +41,7 @@
     font-weight: 400;
     font-size: 50px;
     max-width: 600px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .Text02 h1 span {
@@ -55,8 +53,7 @@
 }
 
 .Text02 p {
-    margin-left: 40px;
-
+    margin-left: 50px;
     color: rgb(184, 184, 184);
     margin-top: 20px;
     font-family: 'Roboto';
@@ -129,9 +126,10 @@
 }
 
 .botao-saiba-mais {
+    font-family: 'roboto';
     background-color: #87FD18;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     border-radius: 20px;
     padding: 12px 25px;
@@ -154,6 +152,9 @@
     background-color: black;
     display: flex;
     justify-content: center;
+}
+.logo7{
+    width: 400px !important;
 }
 
 @media (max-width: 768px) {

@@ -13,9 +13,9 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -60px;
+    bottom: -40px;
     width: 100%;
-    height: 70px;
+    height: 40px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
@@ -129,24 +129,24 @@ li:hover {
         border-right: 1px solid;
         border-image: linear-gradient(to bottom, #96eb0f, transparent) 1;
     }
-
     .nav-header.active {
-        display: flex;
-        /* Mostra quando ativo */
-    }
+    display: flex;
+    /* Mostra quando ativo */
+}
 
-    .logo {
-        font-size: 30px;
-    }
+.logo {
+    font-size: 30px;
+}
 
-    .logo-Language {
-        flex-direction: column;
-
-    }
-
-    li {
-        font-size: 17px;
-        border-bottom: 1px solid rgba(150, 235, 15, 0.2);
-    }
+.logo-Language {
+    flex-direction: column;
 
 }
+
+li {
+    font-size: 17px;
+    border-bottom: 1px solid rgba(150, 235, 15, 0.2);
+}
+
+}
+

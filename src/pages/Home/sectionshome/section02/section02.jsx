@@ -26,8 +26,8 @@ import servico4 from "../../../../assets/Midia/imagens/imagemdeconsultorias/serv
 import servico5 from "../../../../assets/Midia/imagens/imagemdeconsultorias/servico5.jpg";
 const Section02 = () => {
 
-  const {t}= useTranslation();
-    
+  const { t } = useTranslation();
+
   var settings = {
     dots: true,
     infinite: true,
@@ -65,7 +65,7 @@ const Section02 = () => {
       }
     ]
   };
- var sliderservicos = {
+  var sliderservicos = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -104,83 +104,82 @@ const Section02 = () => {
   };
   return (
     <div>
-       <h1 className="Nossos-clientes">{t('OUR_CLIENTS')}</h1>
+      <h1 className="Nossos-clientes">{t('OUR_CLIENTS')}</h1>
       <div className="carrossel">
         <Slider {...settings}>
-          <img src={logo1} alt="logo1"></img>
-          <img src={logo2} alt="logo2"></img>
-          <img src={logo3} alt="logo3"></img>
-          <img src={logo4} alt="logo4"></img>
-          <img src={logo5} alt="logo5"></img>
-          <img src={logo6} alt="logo6"></img>
-          <img src={logo7} alt="logo7"></img>
-          <img src={logo8} alt="logo8"></img>
-          <img src={logo9} alt="logo9"></img>
-          <img src={logo10} alt="logo10"></img>
-          <img src={logo11} alt="logo11"></img>
-          <img src={logo12} alt="logo12"></img>
+          <div className="logo-container"><img src={logo1} alt="logo1" /></div>
+          <div className="logo-container"><img src={logo2} alt="logo2" /></div>
+          <div className="logo-container"><img src={logo3} alt="logo3" /></div>
+          <div className="logo-container"><img src={logo4} alt="logo4" /></div>
+          <div className="logo-container"><img src={logo5} alt="logo5" /></div>
+          <div className="logo-container"><img src={logo6} alt="logo6" /></div>
+          <div className="logo-container"><img src={logo8} alt="logo8" /></div>
+          <div className="logo-container"><img src={logo9} alt="logo9" /></div>
+          <div className="logo-container"><img src={logo10} alt="logo10" /></div>
+          <div className="logo-container"><img src={logo11} alt="logo11" /></div>
+          <div className="logo-container"><img src={logo12} alt="logo12" /></div>
         </Slider>
       </div>
-         <div>
-              <div className="quadrante02">
-                <div className="Text02">
-                  <h1>{t('OUR_SERVICES')} <span>{t('OUR_SERVICES-SPAN')}</span> </h1>
-                  <p>{t('PARTNER_TEXT')}</p>
+      <div>
+        <div className="quadrante02">
+          <div className="Text02">
+            <h1>{t('OUR_SERVICES')} <span>{t('OUR_SERVICES-SPAN')}</span> </h1>
+            <p>{t('PARTNER_TEXT')}</p>
+          </div>
+          <div className="carrosselServicos">
+            <Slider{...sliderservicos}>
+              <div className="servico-card">
+                <img src={servico1} alt="servico1" className="imagem-servico" />
+                <div className="servico-overlay">
+                  <h3 className="servico-titulo">{t('SERVICES.UI_UX_DESIGN')}</h3>
+                  <a href="/servico1" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
                 </div>
-                <div className="carrosselServicos">
-                  <Slider{...sliderservicos}>
-                    <div className="servico-card">
-                      <img src={servico1} alt="servico1" className="imagem-servico" />
-                      <div className="servico-overlay">
-                        <h3 className="servico-titulo">{t('SERVICES.UI_UX_DESIGN')}</h3>
-                        <a href="/servico1" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
-                      </div>
-                    </div>
-      
-                    <div className="servico-card">
-                      <img src={servico2} alt="servico2" className="imagem-servico" />
-                      <div className="servico-overlay">
-                        <h3 className="servico-titulo">{t('SERVICES.SOLUTION_DEVELOPMENT')}</h3>
-      
-                        <a href="/servico2" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
-                      </div>
-                    </div>
-      
-                    <div className="servico-card">
-      
-      
-                      <img src={servico3} alt="servico3" className="imagem-servico" />
-                      <div className="servico-overlay">
-                        <h3 className="servico-titulo">{t('SERVICES.SMART_PROCESS')}</h3>
-                        <a href="/servico3" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
-                      </div>
-                    </div>
-      
-                    <div className="servico-card">
-                      <img src={servico4} alt="servico4" className="imagem-servico" />
-                      <div className="servico-overlay">
-                        <h3 className="servico-titulo">{t('SERVICES.JIRA_CONSULTING')}</h3>
-      
-                        <a href="/servico4" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
-                      </div>
-      
-                    </div>
-      
-                    <div className="servico-card">
-                      <img src={servico5} alt="servico5" className="imagem-servico" />
-                      <div className="servico-overlay">
-                        <h3 className="servico-titulo">{t('SERVICES.DATA_AI')}
-                        </h3>
-      
-                        <a href="/servico5" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
-                      </div>
-      
-                    </div>
-                  </Slider>
-                </div>
-          
               </div>
-            </div>
+
+              <div className="servico-card">
+                <img src={servico2} alt="servico2" className="imagem-servico" />
+                <div className="servico-overlay">
+                  <h3 className="servico-titulo">{t('SERVICES.SOLUTION_DEVELOPMENT')}</h3>
+
+                  <a href="/servico2" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
+                </div>
+              </div>
+
+              <div className="servico-card">
+
+
+                <img src={servico3} alt="servico3" className="imagem-servico" />
+                <div className="servico-overlay">
+                  <h3 className="servico-titulo">{t('SERVICES.SMART_PROCESS')}</h3>
+                  <a href="/servico3" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
+                </div>
+              </div>
+
+              <div className="servico-card">
+                <img src={servico4} alt="servico4" className="imagem-servico" />
+                <div className="servico-overlay">
+                  <h3 className="servico-titulo">{t('SERVICES.JIRA_CONSULTING')}</h3>
+
+                  <a href="/servico4" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
+                </div>
+
+              </div>
+
+              <div className="servico-card">
+                <img src={servico5} alt="servico5" className="imagem-servico" />
+                <div className="servico-overlay">
+                  <h3 className="servico-titulo">{t('SERVICES.DATA_AI')}
+                  </h3>
+
+                  <a href="/servico5" className="botao-saiba-mais">{t('SERVICES.LEARN_MORE')}</a>
+                </div>
+
+              </div>
+            </Slider>
+          </div>
+
+        </div>
+      </div>
     </div>
   )
 }

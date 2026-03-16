@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -27,7 +28,7 @@ body,html {
   margin-top: 200px;
   font-family: 'Roboto';
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 50px;
   max-width: 600px;
 }
@@ -61,7 +62,7 @@ body,html {
   border-radius: 25px;
   color: black;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   border: none;
   transition: background 0.3s ease;
@@ -109,6 +110,7 @@ body,html {
   mask-position: center;
   mask-size: cover;
 }
+
 @media (max-width: 768px) {
 
   .quadrante01 {
@@ -149,18 +151,67 @@ body,html {
   }
 
   .slider img {
-    width: 90%;
+    width:90%;
     margin: 0 auto;
     display: block;
   }
 
 
 }
-@media (max-width:1291px){
+
+@media (max-width:1291px) {
   .texts p {
     margin-top: 50px;
     max-width: 500%;
     padding-right: 30px;
-    
+
   }
+}
+
+@media (max-width: 1178px) {
+  .quadrante01 {
+    margin-top: 50px;
+    flex-direction: column;
+    /* Faz os itens (texto e imagem) empilharem */
+    align-items: center;
+    /* Centraliza tudo horizontalmente */
+    text-align: center;
+  }
+
+
+  .Titledestac {
+    margin-top: 100px;
+    /* Ajuste o topo para não ficar muito grudado */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragrapy01 {
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .slider {
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    /* Espaço entre o texto e a foto */
+  }
+
+  .slider img {
+    margin: 0 auto;
+    max-width: 80%;
+    /* Garante que a foto não fique gigante no mobile */
+  }
+
+
 }

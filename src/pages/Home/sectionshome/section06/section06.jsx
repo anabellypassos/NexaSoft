@@ -10,7 +10,7 @@ const Section06 = () => {
       <div className='section01'>
         <h1 className='logo'>NexaSoft</h1>
         <h3>{t('FOOTER_TITLE')}</h3>
-<div>
+<div className='redes'>
   <Instagram sx={{ fontSize: 40, color: "white" }} />
   <LinkedIn sx={{ fontSize: 40, color: "white" }} />
 </div>
@@ -40,15 +40,16 @@ const Section06 = () => {
         </div>
       </div>
       <hr />
-      <div className='ours'>
-        <p> @2026 NexaSoft</p>
-      </div>
+   
       <div className='links'>
         <a href="">{t('FOOTER_SECURITY_POLICY')}</a>
          <div className='divider'>
           |
           </div>
         <a href="">{t('FOOTER_CODE_ETHICS')} </a>
+      </div>
+         <div className='ours'>
+        <p> @2026 NexaSoft</p>
       </div>
       <div>
 
