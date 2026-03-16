@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section05.css'
+import './section05.css'
 import call from '../../../../assets/Midia/imagens/call.png'
 import { useTranslation } from 'react-i18next';
 
