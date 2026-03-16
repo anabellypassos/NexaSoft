@@ -37,7 +37,7 @@ const Header = () => {
         <h1 className='logo' onClick={() => scrollToSection('home')}>NexaSoft</h1>
 
         <nav className={`nav-header ${hamburguerOpen ? 'active' : ''}`}>
-          
+
           {/* Textos traduzidos usando o t() */}
           <li onClick={() => scrollToSection('servicos')}>{t('HEADER.SERVICES')}</li>
           <li onClick={() => scrollToSection('contato')}>{t('HEADER.CONTACT')}</li>
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
 
         </nav>
-       
+
         <div className={`menu-hamburguer ${hamburguerOpen ? 'active' : ''}`} onClick={toggleHamburguer}>
           <span className='burger'></span>
           <span className='burger'></span>
